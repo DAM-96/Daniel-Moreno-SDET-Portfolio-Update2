@@ -1,2 +1,5 @@
-# Daniel-Moreno-SDET-Portfolio-Update2
-An updated version of my last portfolio, with new elements and projects.
+# Daniel Moreno's SDET Portfolio
+
+## About
+
+A portfolio containing some of my work as a developer so far

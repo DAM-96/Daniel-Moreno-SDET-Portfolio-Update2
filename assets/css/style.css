@@ -1,0 +1,146 @@
+:root {
+  --main-color: #010926;
+  --neutral-color: #eff2f1;
+  --accent-color: #dd6031;
+  --secondary-color: #276fbf;
+  --terciary-color: #8e8dbe;
+}
+
+body {
+  background-color: var(--neutral-color);
+  color: var(--main-color);
+  font-family: "Roboto Mono";
+}
+
+a {
+  color: var(--accent-color);
+  padding: 0.2em;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+a:active {
+  color: var(--neutral-color);
+  border-radius: 30px;
+  background-color: var(--accent-color);
+}
+
+h3 span {
+  font-weight: 500;
+}
+
+header {
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px;
+  border-color: var(--main-color);
+  border-style: solid;
+  background-color: var(--main-color);
+  color: var(--neutral-color);
+}
+
+.main-color {
+  background-color: var(--main-color);
+  color: var(--neutral-color);
+}
+
+.neutral-color {
+  background-color: var(--neutral-color);
+  color: var(--main-color);
+}
+
+.neutral-color > * {
+  background-color: var(--neutral-color);
+  color: var(--main-color);
+}
+
+.menu .nav-link {
+  font-size: 20px;
+  color: var(--neutral-color);
+  padding: 1em;
+  border-style: solid;
+  margin: 10px;
+}
+
+.menu .nav-link:hover {
+  border-style: solid;
+  padding: 0.85em;
+  border-width: 0.15em;
+  border-radius: 1em;
+  border-color: var(--neutral-color);
+}
+
+.menu .nav-link:active {
+  background-color: var(--secondary-color);
+  border-color: var(--terciary-color);
+  color: var(--main-color);
+}
+
+.section-wrapper {
+  margin: 10px 20px;
+}
+
+.section-title-holder {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px;
+  border-color: var(--main-color);
+  border-style: solid;
+}
+
+#main-content {
+  padding: 30px 10px;
+}
+
+#contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-info h3 {
+  margin-left: 5%;
+}
+
+#about-me-text {
+  font-size: large;
+}
+
+#work-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-section {
+  flex: 1 0 40%;
+  color: var(--main-color);
+  padding: 2em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.work-section:hover {
+  color: var(--accent-color);
+  animation: pulse 2s infinite;
+}
+
+.work-section:active {
+  animation: heartBeat 1s;
+  color: var(--neutral-color);
+}
+
+.work-section h4 {
+  padding-top: 1em;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+}

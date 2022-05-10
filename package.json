@@ -1,0 +1,25 @@
+{
+  "name": "daniel-moreno-sdet-portfolio-update2",
+  "version": "1.0.0",
+  "description": "An updated version of my last portfolio, with new elements and projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DAM-96/Daniel-Moreno-SDET-Portfolio-Update2.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Daniel Moreno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DAM-96/Daniel-Moreno-SDET-Portfolio-Update2/issues"
+  },
+  "homepage": "https://github.com/DAM-96/Daniel-Moreno-SDET-Portfolio-Update2#readme",
+  "dependencies": {
+    "prettier": "^2.6.2"
+  }
+}

@@ -1,0 +1,4 @@
+hwresources/
+node_modules
+package-lock.json
+indexOld.html
