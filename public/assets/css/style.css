@@ -175,3 +175,20 @@ header {
   border-color: var(--terciary-color);
   animation: rubberBand 3s infinite;
 }
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  flex: 1;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  color: var(--neutral-color);
+  background-color: var(--main-color);
+}
+
+#additional-contact{
+  display: flex;
+  flex-direction: column;
+}

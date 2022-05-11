@@ -5,6 +5,7 @@ let footerElements = {
   license: document.getElementById("license"),
   additionalContact: document.getElementById("additional-contact")
 };
+let timeInterval;
 
 
 let icons = {
@@ -101,17 +102,18 @@ function renderWorkItems() {
 }
 
 function renderFooter(){
-  renderCurrDate();
   renderLicense();
   renderAdditionalContact();
+  renderCurrDate();
+  if(!timeInterval){
+    timeInterval = setInterval(updateClock, 1000);
+  }
 }
 
 function renderCurrDate(){
-  let currDate = Date.now();
+  let currDate = new Date;
   let tempSpan = document.createElement("span");
-  let spanText = document.createTextNode(currDate.toLocaleString("es-MX"));
-
-  tempSpan.appendChild(spanText);
+  tempSpan.innerHTML = `${currDate.toLocaleString("en-US")}`;
 
   footerElements.currentDate.appendChild(tempSpan);
 }
@@ -122,10 +124,17 @@ function renderLicense(){
 
 function renderAdditionalContact(){
   footerElements.additionalContact.innerHTML = `
-  <span>Daniel Monreno</span>
+  <span>Daniel Moreno</span>
   <span>Cellphone: 8186555552</span>
   <span>Monterrey, NL, México<span>
   `
+}
+
+function updateClock(){
+  let clockText = footerElements.currentDate.firstChild;
+  let currDate = new Date;
+
+  clockText.innerHTML = `${currDate.toLocaleString("en-US")}`
 }
 
 runApp();
