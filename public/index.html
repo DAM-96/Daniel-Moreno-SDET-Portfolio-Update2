@@ -80,7 +80,7 @@
         </div>
         <div id="contact-me" class="col section-wrapper">
           <div class="section-title-holder">
-            <h2>Join my Network</h2>
+            <h2 class="section-title">Join my Network</h2>
           </div>
           <div id="contact-info" class="content-section">
             <h3>
@@ -162,31 +162,39 @@
       </div>
       <div id="work" class="row section-wrapper">
         <div class="section-title-holder">
-          <h2>My Work</h2>
+          <h2 class="section-title">My Work</h2>
         </div>
         <div id="work-container" class="content-section"></div>
       </div>
       <div id="resume" class="row section-wrapper">
         <div class="section-title-holder">
-          <h2>Resume</h2>
+          <h2 class="section-title">Resume</h2>
         </div>
         <div class="content-section">
           <h4>
             Here you should be able to download an updated version of my CV
           </h4>
           <div>
-            <button>
+            <button id="resume-download" class="btn btn-primary">
               <a
                 href="./assets/files/CV_DanielMoreno_2022.pdf"
                 download="CV_DanielMoreno_2022.pdf"
                 target="_blank"
-                >download</a
+                >Download! <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box-arrow-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z"/>
+                    <path fill-rule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
+                  </svg> </a
               >
             </button>
           </div>
         </div>
       </div>
     </div>
+    <footer id="site-footer">
+        <div id="current-date"></div>
+        <div id="license"></div>
+        <div id="additional-contact"></div>
+    </footer>
     <script
       defer
       src="https://use.fontawesome.com/releases/v6.1.1/js/solid.js"
@@ -204,6 +212,6 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
-    <script src="./assets/js/script.js"></script>
+    <script type="module" src="assets/js/index.js"></script>
   </body>
 </html>
